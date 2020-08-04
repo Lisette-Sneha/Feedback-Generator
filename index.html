@@ -8,19 +8,26 @@
 </head>
 <body>
     <div>
-    <label for="time">time</label>
-    <input type="text" id='time' placeholder='time'>
+    <input type="text" id='time' placeholder='* time' required>
     <button id="time-examples-btn">Show time examples</button>
 <div id="time-examples-section" class="hide">
   <p>Yesterday, Just now, On Monday, Last week</p>
 </div>
-    <input type="text" id='situation' placeholder ='describe situation'>
+    <input type="text" id='situation' placeholder ='situation'>
     <button id="situation-examples-btn">Show situation examples</button>
  <div id="situation-examples-section" class="hide">
-     <p>While we we're in the stand-up, During our team discussion, While we sat at our desks</p>
+     <p>While we we're in the stand-up, During our team discussion, While I was presenting</p>
  </div>
     <input type="text" id="location" placeholder="location">
+    <button id="location-examples-btn">Show location examples</button>
+ <div id="location-examples-section" class="hide">
+     <p>In the kitchen area, While we we're in the meeting room, At the customer event</p>
+ </div>
     <input type="text" id='others' placeholder='others'>
+    <button id="others-examples-btn">Show others examples</button>
+<div id="others-examples-section" class="hide">
+    <p>Johnny, The rest of our Team, Our manager</p>
+</div>
     <button id="build-button">my button</button>
     <p id="final-feedback"></p>
     </div>
