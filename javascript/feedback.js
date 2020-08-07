@@ -4,7 +4,7 @@
 let totalScore = 60
 const badWords = ['shitty', 'dumb', 'retarded', 'stupid', 'lazy', 'horrible']
 const badWordsFromUser = []
-const wordsOfEncouragement =['impressive', 'incredible', 'inspiring','brave', 'impactful', 'amazing']
+const wordsOfEncouragement =['impressive', 'incredible', 'inspiring','brave', 'impactful', 'amazing', ]
 const goodWordsFromUser = []
 
 const checkForBadWords = (array) => {
@@ -21,16 +21,16 @@ const checkForBadWords = (array) => {
 }
 
 const checkForWordsOfEncouragement = (array) => {
-    array.forEach(word => {
-      wordsOfEncouragement.forEach(goodWord => {
-        if (word.includes(goodWord)) {
-          alert("Hey, we really like the way you are writing your feedback with words of encouragement")
-          goodWordsFromUser.push(word)
-          totalScore += 10
-        }
+  array.forEach(word => {
+    wordsOfEncouragement.forEach(goodWord => {
+      if (word.includes(goodWord)) {
+        alert("Hey, we really like the way you are writing your feedback with words of encouragement")
+        goodWordsFromUser.push(word)
+        totalScore += 10
       }
-    )    
-    })
+    }
+  )    
+  })
   console.log(totalScore)
 }
 
