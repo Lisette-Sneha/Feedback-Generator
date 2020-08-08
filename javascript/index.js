@@ -18,6 +18,8 @@ const impactExamplesBtn = document.getElementById('impact-examples-btn')
 const nextExamplesBtn = document.getElementById('next-examples-btn')
 const goodWordCount = document.getElementById('counting-good-words')
 const badWordCount = document.getElementById('counting-bad-words')
+const emailInput = document.getElementById('email-input')
+const emailAddress = document.getElementById('email-address')
 
 timeExamplesBtn.addEventListener('click', () => {
   toggleSection('time-examples-section')
@@ -43,9 +45,12 @@ nextExamplesBtn.addEventListener('click', () => {
 buildButton.addEventListener('click', () => {
   textArea.style.display = "block"
   textArea.value = describeContext(time.value, situation.value, myLocation.value, others.value, observation.value, impact.value, next.value)
-  finalScore.innerHTML = `${totalScore} is your Feedback score`
+  finalScore.innerHTML = `<strong>${totalScore}</strong> is your <strong>FEEDBACK SCORE</strong>`
   goodWordCount.innerHTML = `<strong>${goodWordsFromUser.length}</strong> word(s) of <strong>encouragement</strong> have been used`
   badWordCount.innerHTML = `<strong>${badWordsFromUser.length}</strong> words that are <strong>inappropriate</strong> have been used`
+})
+emailInput.addEventListener('change', () => {
+  emailAddress.href = `mailto: ${emailInput.value}`
 })
 
 

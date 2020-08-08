@@ -1,7 +1,7 @@
 body {
     background-color: #F8F6F3;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
 }
 #logo {
     width: 40%;
@@ -20,6 +20,11 @@ p {
 }
 .section-title {
     padding-top: 20px;
+    color: #333333;
+}
+.short-description {
+    font-weight: 200;
+    margin-bottom: 20px;
 }
 .paddingplus {
     padding: 0 10px;
@@ -38,9 +43,16 @@ p {
   }
 h1 {
     color: #333333;
+    font-size: 40px;
+    font-weight: 600;
 }
  h2 {
     color: #333333;
+    font-weight: 400;
+ }
+ h3 {
+     color: #333333;
+     font-weight: 400;
  }
 .hide {
     display: none
@@ -105,49 +117,21 @@ button:hover {
     margin-bottom: 60px;
 }
 
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  /* The actual popup (appears on top) */
-  .popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+footer {
+    background-color: #f2eee7;
+}
+@media (min-width: 768px) {
+    .desktop-wrapper {
+        margin: 0 200px 40px 200px;
+    }
+    #logo {
+        width: 150px;
+    }
+    .feedback-constructor {
+        padding: 20px 40px 40px 40px;
+    }
+    button {
+        margin: 0 auto;
+        display: block;
+    }
+    }
