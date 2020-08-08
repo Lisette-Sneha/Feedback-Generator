@@ -19,27 +19,26 @@
         </div>
     </div>
     <h2 class="section-title paddingplus">Construct COIN Feedback</h2>
-        <div>
             <div class="feedback-constructor">
             <h3 class="section-title">Context</h3>
         <p>Context is about describing the situation that you want to give feedback about.</p>
-    <input class="inputfields" type="text" id='time' placeholder='* time' required>
-    <p id="time-examples-btn">Show time examples</p>
+    <input class="inputfields" type="text" id='time' placeholder='Time'>
+    <p class="examples-btn" id="time-examples-btn">Show time examples</p>
 <div id="time-examples-section" class="hide">
   <p>For example: Yesterday, Just now, On Monday, Last week</p>
 </div>
-    <input class="inputfields" type="text" id='situation' placeholder ='situation'>
-    <p id="situation-examples-btn">Show situation examples</p>
+    <input class="inputfields" type="text" id='situation' placeholder ='Situation'>
+    <p class="examples-btn" id="situation-examples-btn">Show situation examples</p>
  <div id="situation-examples-section" class="hide">
      <p>While we we're in the stand-up, During our team discussion, While I was presenting</p>
  </div>
-    <input class="inputfields" type="text" id="location" placeholder="location">
-    <p id="location-examples-btn">Show location examples</p>
+    <input class="inputfields" type="text" id="location" placeholder="Location">
+    <p class="examples-btn" id="location-examples-btn">Show location examples</p>
  <div id="location-examples-section" class="hide">
      <p>In the kitchen area, While we we're in the meeting room, At the customer event</p>
  </div>
-    <input class="inputfields" type="text" id='others' placeholder='others'>
-    <p id="others-examples-btn">Show others examples</p>
+    <input class="inputfields" type="text" id='others' placeholder='Others'>
+    <p class="examples-btn" id="others-examples-btn">Show others examples</p>
 <div id="others-examples-section" class="hide">
     <p>Johnny, The rest of our Team, Our manager</p>
 </div>
@@ -48,7 +47,7 @@
 <h3 class="section-title">Observation</h3>
         <P>Observations are about what you witnessed, heard, saw, noticed.</P>
 <input class="inputfields" type="text" id='observation' placeholder='I noticed that...'>
-<p id="observation-examples-btn">Show observation examples</p>
+<p class="examples-btn" id="observation-examples-btn">Show observation examples</p>
 <div id="observation-examples-section" class="hide">
 <p>I heard you said... , I read your report and comments..., I saw that...</p>
 </div>
@@ -57,7 +56,7 @@
 <h3 class="section-title">Impact</h3>
         <P>Impact is about the impact someone's behaviour or words had on you specifically</P>
 <input class="inputfields" type="text" id='impact' placeholder='It made me feel like'>
-<p id="impact-examples-btn">Show impact examples</p>
+<p class="examples-btn" id="impact-examples-btn">Show impact examples</p>
 <div id="impact-examples-section" class="hide">
 <p>It made me feel like you do not care..., I felt really valued..., It made me want to jump for joy...</p>
 </div>
@@ -66,41 +65,25 @@
 <h3 class="section-title">Next Steps</h3>
         <P>Here you can suggest having a coffee to talk, suggest as solution or tell someone to start, stop or continue a behaviour</P>
 <input class ="inputfields" type="text" id='next' placeholder='What I would like to suggest'>
-<p id="next-examples-btn">Show next steps examples</p>
+<p class="examples-btn" id="next-examples-btn">Show next steps examples</p>
 <div id="next-examples-section" class="hide">
 <p>What I would like to suggest..., Let's go for a coffee to discuss in more detail..., Please stop doing that...</p>
 </div>
-</div>
     </div>
     <button id="build-button">Generate constructive feedback</button>
-    <p id="final-feedback"></p>
-    <div class="popup" onclick="myFunction()">
+    <textarea id="updated-text-area" name="updateTextArea" rows="4" cols="50">
+        </textarea>
+    <p id="final-score"></p>
+    <p id="counting-good-words"></p>
+    <p id="counting-bad-words"></p>
+
+
+    <!-- <div class="popup" onclick="myFunction()">
         <button id="feedback-score-button">0</button>
         <span class="popuptext" id="myPopup">Popup text...</span>
-      </div>
-
+      </div> -->
  
-   
-    <!-- <input type="text" id='situation' placeholder ='situation'>
-    <button id="situation-examples-btn">Show situation examples</button>
-    <div id="situation-examples-section" class="hide">
-     <p>While we we're in the stand-up, During our team discussion, While I was presenting</p>
-</div>
-     <input type="text" id="location" placeholder="location">
-    <button id="location-examples-btn">Show location examples</button>
-    <div id="location-examples-section" class="hide">
-     <p>In the kitchen area, While we we're in the meeting room, At the customer event</p>
-    </div>
-        <input type="text" id='others' placeholder='others'>
-        <button id="others-examples-btn">Show others examples</button>
-    <div id="others-examples-section" class="hide">
-        <p>Johnny, The rest of our Team, Our manager</p>
-    </div>
-        <button id="build-button">my button</button>
-        <p id="final-feedback"></p>
-        </div> -->
- 
-    <script src="./javascript/index.js"></script>
     <script src="./javascript/feedback.js"></script>
+    <script src="./javascript/index.js"></script>
 </body>
 </html>

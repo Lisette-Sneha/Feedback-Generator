@@ -14,10 +14,9 @@ p {
     background: url(Images/Wallpaper\ 8.png);
     background-repeat: no-repeat;
     background-size: 50% */
-}
 #introduction {
     line-height: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .section-title {
     padding-top: 20px;
@@ -29,7 +28,14 @@ p {
     width: 90%;
     margin: 0 auto;
     display: block;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #7777;
+    padding: 0 10px;
 }
+.inputfields::placeholder {
+    color: #7777;
+  }
 h1 {
     color: #333333;
 }
@@ -39,10 +45,15 @@ h1 {
 .hide {
     display: none
 }
+.examples-btn {
+    font-size: 12px;
+    margin-bottom: 20px;
+
+}
 button {
-    background-color: white;
-    color: #006a5f;
-    border-radius: 15px;
+    background-color:#006a5f;
+    color: #fff;
+    border-radius: 20px;
     border: 1px solid #006a5f;
     width: 90%;
     margin: 10px 10px 10px 18px;
@@ -51,15 +62,22 @@ button {
     transition-duration: 0.1s;
 }
 button:hover {
-    background-color: #E8F2F1;
+    background-color: #fff;
     color:#006a5f;
   }
 
 .feedback-constructor {
     background-color: #ffffff;
-    padding: 0 10px;
+    padding: 0 10px 30px 10px;
+    margin-bottom: 40px;
     border-radius: 15px;
-    box-shadow: ;
+    box-shadow: rgba(143, 111, 63, 0.1) 0px 4px 8px
+}
+#updated-text-area {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+
 }
 
 .popup {

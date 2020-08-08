@@ -6,8 +6,9 @@ const others = document.getElementById('others')
 const observation = document.getElementById('observation')
 const impact = document.getElementById('impact')
 const next = document.getElementById('next')
+const textArea = document.getElementById('updated-text-area')
 const buildButton = document.getElementById('build-button')
-const finalFeedback = document.getElementById('final-feedback')
+const finalScore = document.getElementById('final-score')
 const timeExamplesBtn = document.getElementById('time-examples-btn')
 const situationExamplesBtn = document.getElementById('situation-examples-btn')
 const locationExamplesBtn = document.getElementById('location-examples-btn')
@@ -15,6 +16,8 @@ const othersExamplesBtn = document.getElementById('others-examples-btn')
 const observationExamplesBtn = document.getElementById('observation-examples-btn')
 const impactExamplesBtn = document.getElementById('impact-examples-btn')
 const nextExamplesBtn = document.getElementById('next-examples-btn')
+const goodWordCount = document.getElementById('counting-good-words')
+const badWordCount = document.getElementById('counting-bad-words')
 
 timeExamplesBtn.addEventListener('click', () => {
   toggleSection('time-examples-section')
@@ -38,7 +41,10 @@ nextExamplesBtn.addEventListener('click', () => {
   toggleSection('next-examples-section')
 })
 buildButton.addEventListener('click', () => {
-  finalFeedback.innerHTML = describeContext(time.value, situation.value, myLocation.value, others.value, observation.value, impact.value, next.value)  
+  textArea.value = describeContext(time.value, situation.value, myLocation.value, others.value, observation.value, impact.value, next.value)
+  // finalScore.innerHTML = `${totalScore} is your Feedback score`
+  // goodWordCount.innerHTML = `${goodWordsFromUser.length} words of encouragement have been used`
+  // badWordCount.innerHTML = `${badWordsFromUser.length} inappropriate words have been used`
 })
 
 

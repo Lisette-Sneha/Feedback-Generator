@@ -1,6 +1,3 @@
-// function describeContext (time, situation, location, others) {
-// return `${time} ${situation} ${location} ${others} ${observation} ${impact} ${next}`
-// }
 let totalScore = 60
 const badWords = ['shitty', 'dumb', 'retarded', 'stupid', 'lazy', 'horrible']
 const badWordsFromUser = []
@@ -8,13 +5,15 @@ const wordsOfEncouragement =['impressive', 'incredible', 'inspiring','brave', 'i
 const goodWordsFromUser = []
 
 const checkForBadWords = (array) => {
+  console.log(array)
   array.forEach(word => {
+    console.log(word)
     badWords.forEach(badWord => {
       if (word.includes(badWord)) {
         alert("Hey you, don't say such bad words! Use respectful language")
         badWordsFromUser.push(word)
-        totalScore -= 10
-      }
+        totalScore -= 10   
+      } 
     })
   })
   console.log(totalScore)
@@ -35,16 +34,10 @@ const checkForWordsOfEncouragement = (array) => {
 }
 
 const describeContext = (...whateverTheyType) => {
-// // whateverTheyType.forEach(word => {
-// // if (badWords.includes(word.toLowerCase())) {
-// //     alert ("Hey you, don't say such bad words! Use respectful language")
-// //       badWordsFromUser.push(word)
-        
-    
-// }
-//   })
 checkForBadWords(whateverTheyType)
 checkForWordsOfEncouragement(whateverTheyType)
+console.log(badWordsFromUser)
+console.log(whateverTheyType)
 return whateverTheyType.join(' ')
 }
 
