@@ -41,10 +41,12 @@ nextExamplesBtn.addEventListener('click', () => {
   toggleSection('next-examples-section')
 })
 buildButton.addEventListener('click', () => {
+  textArea.style.display = "block"
   textArea.value = describeContext(time.value, situation.value, myLocation.value, others.value, observation.value, impact.value, next.value)
-  // finalScore.innerHTML = `${totalScore} is your Feedback score`
-  // goodWordCount.innerHTML = `${goodWordsFromUser.length} words of encouragement have been used`
-  // badWordCount.innerHTML = `${badWordsFromUser.length} inappropriate words have been used`
+  finalScore.innerHTML = `${totalScore} is your Feedback score`
+  goodWordCount.innerHTML = `<strong>${goodWordsFromUser.length}</strong> word(s) of <strong>encouragement</strong> have been used`
+  badWordCount.innerHTML = `<strong>${badWordsFromUser.length}</strong> words that are <strong>inappropriate</strong> have been used`
 })
+
 
 

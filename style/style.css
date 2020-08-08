@@ -48,7 +48,30 @@ h1 {
 .examples-btn {
     font-size: 12px;
     margin-bottom: 20px;
-
+    cursor: pointer;
+}
+.caret {
+    border: 5px solid transparent;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+    vertical-align: top;
+}
+.caret.up {
+    border-bottom: 5px solid;
+}
+.caret.right {
+    border-left: 5px solid;
+    position: relative;
+    left: 10px;
+    top: 3px;
+}
+.caret.down {
+    border-top: 5px solid;
+}
+.caret.left {
+    border-right: 5px solid;
 }
 button {
     background-color:#006a5f;
@@ -74,10 +97,12 @@ button:hover {
     box-shadow: rgba(143, 111, 63, 0.1) 0px 4px 8px
 }
 #updated-text-area {
-    display: block;
-    margin: 0 auto;
+    display: none;
+    margin: 20px auto 0 auto;
     width: 90%;
-
+}
+.keeping-scores {
+    margin-bottom: 60px;
 }
 
 .popup {
