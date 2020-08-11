@@ -18,6 +18,7 @@ const impactExamplesBtn = document.getElementById('impact-examples-btn')
 const nextExamplesBtn = document.getElementById('next-examples-btn')
 const goodWordCount = document.getElementById('counting-good-words')
 const badWordCount = document.getElementById('counting-bad-words')
+const actionableWordCount = document.getElementById('counting-actionable-words')
 const emailInput = document.getElementById('email-input')
 const emailAddress = document.getElementById('email-address')
 const yourFinalFeedback = document.getElementById('build-button')
@@ -49,6 +50,7 @@ buildButton.addEventListener('click', () => {
   finalScore.innerHTML = `<strong>${totalScore}</strong> is your <strong>FEEDBACK SCORE</strong>`
   goodWordCount.innerHTML = `<strong>${goodWordsFromUser.length}</strong> word(s) of <strong>encouragement</strong> have been used`
   badWordCount.innerHTML = `<strong>${badWordsFromUser.length}</strong> words that are <strong>inappropriate</strong> have been used`
+  actionableWordCount.innerHTML =`You mention <strong>${actionWordsFromUser.length}</strong> call to action.`
 })
 emailInput.addEventListener('change', () => {
   emailAddress.href = `mailto: ${emailInput.value}`
