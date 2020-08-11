@@ -20,6 +20,7 @@ const goodWordCount = document.getElementById('counting-good-words')
 const badWordCount = document.getElementById('counting-bad-words')
 const emailInput = document.getElementById('email-input')
 const emailAddress = document.getElementById('email-address')
+const yourFinalFeedback = document.getElementById('build-button')
 
 timeExamplesBtn.addEventListener('click', () => {
   toggleSection('time-examples-section')
@@ -52,6 +53,10 @@ buildButton.addEventListener('click', () => {
 emailInput.addEventListener('change', () => {
   emailAddress.href = `mailto: ${emailInput.value}`
 })
+yourFinalFeedback.addEventListener('click', () => {
+  toggleSection('your-final-feedback')
+})
+
 
 
 

@@ -100,7 +100,21 @@ button:hover {
     background-color: #fff;
     color:#006a5f;
   }
-
+.button-reverse {
+    background-color: #fff;
+    color: #006a5f;
+    border-radius: 20px;
+    border: 1px solid #006a5f;
+    width: 90%;
+    margin: 10px 10px 10px 18px;
+    height: 40px;
+    font-weight: 600;
+    transition-duration: 0.1s;
+}
+.button-reverse:hover{
+    background-color: #E8F2F1;
+    color:#006a5f;
+}
 .feedback-constructor {
     background-color: #ffffff;
     padding: 0 10px 30px 10px;
@@ -112,11 +126,42 @@ button:hover {
     display: none;
     margin: 20px auto 0 auto;
     width: 90%;
+    border-radius: 15 px;
 }
 .keeping-scores {
     margin-bottom: 60px;
 }
-
+.your-constructive-feedback{
+    background-color: #ffffff;
+    padding: 0 10px 30px 10px;
+    margin: 40px 0 40px 0;
+    border-radius: 15px;
+    box-shadow: rgba(143, 111, 63, 0.1) 0px 4px 8px
+}
+.email-input {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    border-bottom: 1px solid #777;
+    font-size: 1rem;
+    padding: .5rem .5rem .5rem 0;
+    border-top-color: initial;
+    border-top-style: initial;
+    border-top-width: 0px;
+    border-right-color: initial;
+    border-right-style: initial;
+    border-right-width: 0px;
+    border-left-color: initial;
+    border-left-style: initial;
+    border-left-width: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-radius: 0;
+}
 footer {
     background-color: #f2eee7;
 }
