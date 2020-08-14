@@ -45,20 +45,17 @@ nextExamplesBtn.addEventListener('click', () => {
   toggleSection('next-examples-section')
 })
 buildButton.addEventListener('click', () => {
-  textArea.style.display = "block"
-  textArea.value = describeContext(time.value, situation.value, myLocation.value, others.value, observation.value, impact.value, next.value)
-  finalScore.innerHTML = `<strong>${totalScore}</strong> is your <strong>FEEDBACK SCORE</strong>`
-  goodWordCount.innerHTML = `<strong>${goodWordsFromUser.length}</strong> word(s) of <strong>encouragement</strong> have been used`
-  badWordCount.innerHTML = `<strong>${badWordsFromUser.length}</strong> words that are <strong>inappropriate</strong> have been used`
-  actionableWordCount.innerHTML =`You mention <strong>${actionWordsFromUser.length}</strong> call to action.`
+  const result = describeContext(time.value, situation.value, myLocation.value, others.value, observation.value, impact.value, next.value)
+  textArea.style.display = 'block'
+  textArea.value = result.text
+  finalScore.innerHTML = `<strong>${result.score}</strong> is your <strong>FEEDBACK SCORE</strong>`
+  goodWordCount.innerHTML = `<strong>${result.goodWords.length}</strong> word(s) of <strong>encouragement</strong> have been used`
+  badWordCount.innerHTML = `<strong>${result.badWords.length}</strong> words that are <strong>inappropriate</strong> have been used`
+  actionableWordCount.innerHTML = `<strong>${result.actionWords.length}</strong> point(s) of action is/are suggested.`
 })
 emailInput.addEventListener('change', () => {
   emailAddress.href = `mailto: ${emailInput.value}`
 })
 yourFinalFeedback.addEventListener('click', () => {
-  toggleSection('your-final-feedback')
+  toggleSection('your-final-feedback', true)
 })
-
-
-
-
