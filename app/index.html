@@ -31,7 +31,7 @@
     <input class="inputfields" type="text" id='situation' placeholder ='Situation'>
     <p class="examples-btn" id="situation-examples-btn">Show situation examples<span class="caret right"></span></p>
  <div id="situation-examples-section" class="hide">
-     <p class="short-description">While we we're in the stand-up, During our team discussion, While I was presenting</p>
+     <p class="short-description">While we were in the stand-up, During our team discussion, While I was presenting</p>
  </div>
     <input class="inputfields" type="text" id="location" placeholder="Location">
     <p class="examples-btn" id="location-examples-btn">Show location examples<span class="caret right"></span></p>
@@ -73,23 +73,30 @@
     </div>
     <button id="build-button">Generate constructive feedback</button>
     <div class="your-constructive-feedback hide" id="your-final-feedback">
-        <h3>Your constructive feedback:</h3>
+        <h3 class="align-your-constructive-feedback"> Your constructive feedback:</h3>
     <textarea id="updated-text-area" name="updateTextArea" rows="4" cols="50">
-        </textarea>     
+        </textarea>
     <div class="keeping-scores">
-    <p id="final-score"></p>
-    <p id="counting-good-words"></p>
-    <p id="counting-bad-words"></p>
+    <p id="final-score" class="align-your-constructive-feedback"></p>
+    <p id="counting-good-words" class="align-your-constructive-feedback"></p>
+    <p id="counting-bad-words" class="align-your-constructive-feedback"></p>
+    <p id="counting-actionable-words" class="align-your-constructive-feedback"></p>
 </div>
-<input class="email-input" type="text" id="email-input" placeholder="Your email address"> </input> 
-<button class="button-reverse"> 
+<div class="submit-area">
+<div>
+<input class="email-input" type="text" id="email-input" placeholder="Your email address"> </input>
+</div>
+<div>
+<button class="button-reverse">
 <a href = "mailto: abc@example.com" id="email-address">Email your feedback</a>
-</button>  
+</button>
+</div>
+</div>
 </div>
 </section>
 <footer>
-    Testing the footer
-</footer>    
+    Submit your feedback app.impraise.com
+</footer>
     <script src="./javascript/index.js"></script>
     <script src="./javascript/feedback.js"></script>
 </body>
